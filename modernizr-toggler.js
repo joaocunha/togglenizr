@@ -19,13 +19,16 @@
         document.getElementsByClassName('togglers')[0].appendChild(label);
 
         document.getElementById(feature).addEventListener('change', function() {
+            var prefix = document.getElementById('prefix').value;
 
-            // TODO: add prefix support
-            // Toggles the class in the HTML
-            document.documentElement.classList.toggle(feature);
-
-            // Toggles the JS property
-            mod[feature] = !mod[feature];
+            // Toggles the class in the HTML and JS
+            if (this.checked) {
+                document.documentElement.classList.add(prefix + feature);
+                mod[feature] = true;
+            } else {
+                document.documentElement.classList.remove(prefix + feature);
+                mod[feature] = true;
+            }
         }, false);
     };
 
