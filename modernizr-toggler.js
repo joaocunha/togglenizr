@@ -16,7 +16,7 @@
         label.appendChild(toggle);
         label.innerHTML += feature;
 
-        document.getElementsByTagName('body')[0].appendChild(label);
+        document.getElementsByClassName('togglers')[0].appendChild(label);
 
         document.getElementById(feature).addEventListener('change', function() {
 

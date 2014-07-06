@@ -4,12 +4,56 @@
     <title>Modernizr Toggler</title>
     <script src="modernizr.js"></script>
     <style type="text/css">
+        * {
+            -webkit-box-sizing:border-box;
+        }
+
+        html, body {
+            font-family: arial;
+            font-size: 14px;
+            line-height: 20px;
+            background: #333;
+            color: white;
+            margin: 0;
+        }
+
         label {
             display: block;
+            margin: 5px;
+            padding: 5px;
+            border: 1px solid #555;
+        }
+
+        label:hover {
+            cursor: pointer;
+            font-weight: bold;
+            background: #444;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 6px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            display: block;
+            padding: 10px;
+            background: #222;
+        }
+
+        a {
+            color: #bb2227;
         }
     </style>
 </head>
 <body>
+    <h1>Modernizr Togglr</h1>
+    <div class="togglers"></div>
+    <p>crafted in a rush by <a href="http://twitter.com/joaocunha">@joaocunha</a></p>
     <script src="modernizr-toggler.js"></script>
 </body>
 </html>
