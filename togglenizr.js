@@ -1,3 +1,15 @@
+/**
+ * Togglenizr
+ * Built in 3 hours of hacking by João Cunha
+ *
+ * Togglenizr is a bookmarklet to toggle (duh) classes on the HTML
+ * and help when implementing fallbacks with Modernizr.
+ *
+ * I apologize beforehand for the "works in my machine" code standards.
+ *
+ * http://github.com/joaocunha/togglenizr
+ * http://twitter.com/joaocunha
+ */
 ;(function(mod, doc) {
     'use strict';
 
