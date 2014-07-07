@@ -11,7 +11,7 @@
  * http://twitter.com/joaocunha
  */
 
-;(function(mod, doc) {
+javascript:(function(mod, doc) {
     'use strict';
 
     var init = function() {
