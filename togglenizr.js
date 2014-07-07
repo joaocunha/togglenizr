@@ -83,20 +83,8 @@
         }
     };
 
-    // =====  CSS Injection borrowed from v-unit  =====
-    // ===== https://github.com/joaocunha/v-unit/ =====
-    var createStylesheet = function() {
-        var stylesheet = doc.createElement('style');
-        stylesheet.rel = 'stylesheet';
-        stylesheet.type = 'text/css';
-        stylesheet.id = VUnit.settings.stylesheetId;
-
-        return stylesheet;
-    };
-
-    var setStylesheetRules
-
-
     init();
 
 })(window.Modernizr, document);
+
+// Najam, Najam.
