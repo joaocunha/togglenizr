@@ -27,7 +27,7 @@ javascript:(function(mod, doc) {
     var createWrapper = function() {
         var wrapper = doc.createElement('div');
         // OMG I LOVE INLINE STYLEZZZ!!!!!!!!!
-        wrapper.innerHTML = '<h1 style="text-align: center;font-size:20px;line-height:24px;margin:5px">Togglenizr</h1><h2 style="font-size:12px;line-height:16px;background:#222;margin:0;text-align:center;">by <a style="color:#b80007;" href="http://twitter.com/joaocunha">@joaocunha</a></h2>';
+        wrapper.innerHTML = '<h1 style="text-align: center;font-size:20px;line-height:24px;margin:5px"><a href="http://github.com/joaocunha/togglenizr" style="color: white">Togglenizr</a></h1>';
         wrapper.id = 'mt-wrapper';
         wrapper.style.cssText = 'font-family: arial;font-size: 14px;line-height: 20px;background: #333;color: white;width: 250px;height: 400px;position: fixed;top: 20px;right: 20px;overflow: scroll;opacity: 0.8;z-index:9999;';
         doc.getElementsByTagName('body')[0].appendChild(wrapper);
