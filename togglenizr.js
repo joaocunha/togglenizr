@@ -18,6 +18,8 @@ javascript:(function(mod, doc) {
         if (mod) {
             createWrapper();
             scanFeatures(mod);
+            appendCloseButton();
+            addEvents();
         } else {
             alert('Can I haz Modernizr?');
             return;
@@ -38,6 +40,33 @@ javascript:(function(mod, doc) {
         prefixInput.placeholder = 'Prefix (optional)';
         prefixInput.style.cssText = 'margin: 15px auto;display: block;color: black;';
         doc.getElementById('mt-wrapper').appendChild(prefixInput);
+    };
+
+    var appendCloseButton = function () {
+        var wrapper = doc.getElementById('mt-wrapper'),
+            closeButton = doc.createElement('button');
+        closeButton.id = 'mt-close-button';
+        closeButton.textContent = '❱';
+        closeButton.style.cssText = 'position: absolute; top: 0; left: 0; border: 0; background: #333; color: #fff; padding: 5px; height: 30px;';
+
+        wrapper.appendChild(closeButton);
+    };
+
+    var addEvents = function () {
+        var wrapper = doc.getElementById('mt-wrapper'),
+            closeButton = doc.getElementById('mt-close-button');
+
+        closeButton.addEventListener('click', function (e) {
+            if(wrapper.style.height === '30px'){
+               wrapper.style.cssText += 'height: 400px; overflow: scroll;';
+                closeButton.textContent = '❱';
+            } 
+            else if (wrapper.style.height === '400px'){
+               wrapper.style.cssText += 'height: 30px; overflow: hidden;';
+                closeButton.textContent = '❰';
+
+            }
+        });
     };
 
     var createToggler = function(feature, state) {
